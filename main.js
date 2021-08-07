@@ -78,7 +78,7 @@ class Time {
 
 let clock = new Time();
 clock.render();
-setInterval(clock.render, 200)
+setInterval(clock.render, 200);
 
 // Вариант отображения часов при запуске!
 
