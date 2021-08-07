@@ -35,7 +35,7 @@ class Time {
             clockTime.children[1].innerHTML = minuts;
             clockTime.children[2].innerHTML = ':' + ' ' + seconds;
     
-            setInterval(this.render.bind(this), 200);     
+            //setInterval(this.render.bind(this), 200);     
         };
 
         clockTime.onclick = function toggle() {
@@ -78,6 +78,7 @@ class Time {
 
 let clock = new Time();
 clock.render();
+setInterval(clock.render, 200)
 
 // Вариант отображения часов при запуске!
 
