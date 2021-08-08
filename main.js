@@ -80,6 +80,6 @@ setInterval(clock.render, 200);
 
 // Вариант отображения часов при запуске!
     //Отображение с секундами
-clock.formats(clock.shortFormat);     
+// clock.formats(clock.shortFormat);     
     //Отображение без секунд
-// clock.formats(clock.fullFormat); 
+clock.formats(clock.fullFormat); 
