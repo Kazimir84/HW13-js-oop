@@ -15,8 +15,20 @@ class Clock {
 
     } else {
       console.log('Введите один из вариантов отображения fullFormat или shortFormat');
-      alert('Напишите или выберите один из вариантов отображения fullFormat или shortFormat');      
-    }
+      alert('Напишите или выберите один из вариантов отображения fullFormat или shortFormat');   
+            
+      clockTime.className = prompt('Напишите или выберите один из вариантов отображения fullFormat или shortFormat', 'fullFormat');
+     
+      if (clockTime.className === 'fullFormat') {
+        this.fullFormat();
+        
+      } else if (clockTime.className === 'shortFormat') {
+        this.shortFormat();
+        
+      } else {
+        location.reload();
+      };
+    };
 
     clockTime.onclick = function toggl() {
   
