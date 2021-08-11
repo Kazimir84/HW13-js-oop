@@ -1,3 +1,132 @@
+class Clock {
+  constructor() {
+    let clockTime = document.getElementById('clockTime');
+    clockTime.addEventListener('click', () => {this.format()});   
+  };
+
+  render() {
+    let time = new Date();    
+
+    let hours = time.getHours() < 10 ? '0' + time.getHours() : time.getHours();
+    let minuts = time.getMinutes() < 10 ? '0' + time.getMinutes() : time.getMinutes();
+    let seconds = time.getSeconds() < 10 ? '0' + time.getSeconds() : time.getSeconds();    
+
+    if (clockTime.classList.contains('fullFormat')) {  
+      clockTime.innerHTML = `${hours} : ${minuts} : ${seconds}`;      
+      
+    } else {
+      clockTime.innerHTML = `${hours} : ${minuts}`;    
+    };
+  };
+
+  format() {
+    clockTime.classList.toggle('fullFormat'); 
+  };
+};
+
+
+let clock = new Clock();
+
+clock.render();
+setInterval(() => clock.render(), 200);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 let clockTime = document.getElementById('clockTime');
 class Clock {
