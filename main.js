@@ -1,6 +1,6 @@
 class Clock {
-  constructor() {
-    let clockTime = document.getElementById('clockTime');
+  constructor(clockTime) {
+    clockTime = document.getElementById('clockTime');
     clockTime.addEventListener('click', () => {this.format()});   
   };
 
@@ -25,7 +25,7 @@ class Clock {
 };
 
 
-let clock = new Clock();
+let clock = new Clock(clockTime);
 
 clock.render();
 setInterval(() => clock.render(), 200);
